@@ -74,7 +74,7 @@ class Item(BaseModel):
     c_26: float
     c_27: float
 
-with open('model.pkl', 'rb') as f:
+with open('best_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 @app.post('/')
